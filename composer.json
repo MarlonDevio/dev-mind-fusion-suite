@@ -1,0 +1,29 @@
+{
+  "name": "marlon/dev-mind-fusion-suite",
+  "require": {
+    "eftec/bladeone": "^4.13"
+  },
+  "require-dev": {
+    "php-stubs/woocommerce-stubs": "^9.3",
+    "woocommerce/woocommerce-sniffs": "^1.0",
+    "wp-coding-standards/wpcs": "^3.1",
+    "squizlabs/php_codesniffer": "^3.10",
+    "friendsofphp/php-cs-fixer": "^3.64"
+  },
+  "autoload": {
+    "psr-4": {
+      "DevMindFusionSuite\\": "backend/"
+    }
+  },
+  "authors": [
+    {
+      "name": "MarlonHamaekersPXL",
+      "email": "mar.hamaekers@gmail.com"
+    }
+  ],
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}

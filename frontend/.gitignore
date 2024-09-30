@@ -1,0 +1,9 @@
+node_modules
+dist
+public
+.env
+.env.local
+.env.development.local
+assets
+package-lock.json
+
