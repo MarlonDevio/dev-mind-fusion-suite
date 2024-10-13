@@ -12,12 +12,8 @@
   },
   "autoload": {
     "psr-4": {
-<<<<<<< HEAD
-      "DevMindFusionSuite\\": "backend/"
-=======
       "DevMindFusionSuite\\": "plugins/",
       "DevMindFusionSuite\\BulkMyWooVariations\\": "plugins/bmv/backend/"
->>>>>>> 2f29792 (dev-mind-fusion-suite)
     }
   },
   "authors": [
