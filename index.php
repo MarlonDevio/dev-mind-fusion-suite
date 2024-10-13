@@ -22,4 +22,9 @@ if (! defined('ABSPATH')) {
 
 require_once __DIR__ . '/vendor/autoload.php';
 
+<<<<<<< HEAD
 $devMindFusionSuite = new DevMindFusionSuite();
+=======
+
+$dmvSuite = DevMindFusionSuite::getInstance();
+>>>>>>> 2f29792 (dev-mind-fusion-suite)
