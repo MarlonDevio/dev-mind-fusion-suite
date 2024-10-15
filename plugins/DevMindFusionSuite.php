@@ -2,15 +2,23 @@
 
 namespace DevMindFusionSuite;
 
+use DevMindFusionSuite\BulkMyWooVariations\BulkMyWooVariations;
+use DevMindFusionSuite\Factories\PluginFactory;
 use DevMindFusionSuite\Utils\DebugHelper;
 
 class DevMindFusionSuite
 {
+    private PluginFactory $pluginFactory;
+    /**
+     * @var PluginBase[]
+     */
+    private array $plugins = [];
     private static DevMindFusionSuite $instance;
 
     private function __construct()
     {
         add_action('plugins_loaded', [$this, 'init']);
+        $this->pluginFactory = new PluginFactory();
     }
     
     public static function getInstance(): DevMindFusionSuite
@@ -20,9 +28,18 @@ class DevMindFusionSuite
         }
         return self::$instance;
     }
+    
+    
 
     public function init()
     {
-        DebugHelper::debug(Config::PLUGINS_URI);
+        try {
+            $this->plugins[] = $this->pluginFactory->create(BulkMyWooVariations::class, []);
+            foreach ($this->plugins as $plugin) {
+                $plugin->init();
+            }
+        } catch (\Exception $e) {
+            DebugHelper::debug($e->getMessage());
+        }
     }
 }

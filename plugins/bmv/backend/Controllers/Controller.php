@@ -1,10 +1,10 @@
 <?php
 
-namespace DevMindFusionSuite\BulkMyWooVariations\Controllers;
+namespace DevMindFusionSuite\BulkMyWooVariations\App\Controllers;
 
-use DevMindFusionSuite\BulkMyWooVariations\Interfaces\IController;
-use DevMindFusionSuite\BulkMyWooVariations\Interfaces\IModel;
-use DevMindFusionSuite\BulkMyWooVariations\Interfaces\IView;
+use DevMindFusionSuite\BulkMyWooVariations\App\Interfaces\IController;
+use DevMindFusionSuite\BulkMyWooVariations\App\Interfaces\IModel;
+use DevMindFusionSuite\BulkMyWooVariations\App\Interfaces\IView;
 
 /**
  * Class Controller

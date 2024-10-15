@@ -1,6 +1,6 @@
 <?php
 
-// namespace DevMindFusionSuite\Config;
+ namespace DevMindFusionSuite\BulkMyWooVariations\App\Config;
 
 define("DEVMINDFUSION_ROOT_PATH", realpath(plugin_dir_path(__FILE__) . '../../'). '/');
 define("DEVMINDFUSION_ROOT_URI", plugins_url() . '/dev-mind-fusion-suite/');

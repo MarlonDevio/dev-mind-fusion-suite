@@ -13,7 +13,8 @@
   "autoload": {
     "psr-4": {
       "DevMindFusionSuite\\": "plugins/",
-      "DevMindFusionSuite\\BulkMyWooVariations\\": "plugins/bmv/backend/"
+      "DevMindFusionSuite\\BulkMyWooVariations\\": "plugins/bmv/",
+      "DevMindFusionSuite\\BulkMyWooVariations\\App\\": "plugins/bmv/backend"
     }
   },
   "authors": [

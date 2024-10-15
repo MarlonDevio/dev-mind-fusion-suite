@@ -1,6 +1,6 @@
 <?php
 
-namespace DevMindFusionSuite\BulkMyWooVariations\Interfaces;
+namespace DevMindFusionSuite\BulkMyWooVariations\App\Interfaces;
 
 /**
  * Interface ITemplateRenderer

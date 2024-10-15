@@ -1,7 +1,6 @@
-
 <?php
 
-namespace DevMindFusionSuite\BulkMyWooVariations\Interfaces;
+namespace DevMindFusionSuite\BulkMyWooVariations\App\Interfaces;
 
 /**
  * Interface IModel
@@ -13,14 +12,14 @@ interface IModel
     /**
      * Get the model data.
      *
-     * @return array The model data.
+     * @return array | object The model data.
      */
-    public function get(): array;
+    public function get(): array | object | null;
 
     /**
      * Set the model data.
      *
-     * @param Object $object The object to set.
+     * @param object $object The object to set.
      */
-    public function set(Object $object): void;
+    public function set(object $object): void;
 }
